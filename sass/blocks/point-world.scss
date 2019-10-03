@@ -1,0 +1,51 @@
+.point-world {
+  color: $white;
+  background: url("../img/point-bg.png") center no-repeat;
+  margin-top: -62px;
+  position: relative;
+  z-index: 1;
+}
+
+.point-world__wrap {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.point-world__title {
+  font-size: px-to-rem(54px);
+  line-height: px-to-rem(64px);
+  max-width: 751px;
+  margin: 20px 0;
+  font-weight: 500;
+}
+
+.point-world__text {
+  max-width: 450px;
+  margin: 20px 0;
+  font-size: px-to-rem(17px);
+  line-height: px-to-rem(24px);
+}
+
+@media (max-width: 980px) {
+  .point-world {
+    margin-top: 0;
+  }
+  .point-world__wrap {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .point-world__title {
+    font-size: px-to-rem(44px);
+    line-height: px-to-rem(54px);
+  }
+}
+
+@media (max-width: 680px) {
+  .point-world {
+    background-position: left center;
+  }
+  .point-world__title {
+    font-size: px-to-rem(30px);
+    line-height: px-to-rem(40px);
+  }
+}

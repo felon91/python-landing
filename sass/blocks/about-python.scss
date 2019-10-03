@@ -1,0 +1,77 @@
+.about-python {
+  h2 {
+    font-size: px-to-rem(54px);
+    line-height: px-to-rem(64px);
+    font-weight: 500;
+    margin: 20px 0;
+    span {
+      color: #F2C94C;
+    }
+  }
+}
+
+.about-python__text {
+  font-size: px-to-rem(17px);
+  line-height: px-to-rem(24px);
+  color: $white;
+  margin: 20px 0;
+  b {
+    font-weight: bold;
+  };
+}
+
+.about-python__subtitle {
+  font-size: px-to-rem(24px);
+  line-height: px-to-rem(32px);
+  margin: 20px 0;
+}
+
+.about-python__block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-python__item {
+  flex-basis: 24%;
+  background: linear-gradient(180deg, #1d2946, #36435e);
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin: 7px 0;
+  p {
+    font-size: px-to-rem(18px);
+    line-height: px-to-rem(24px);
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 980px) {
+  .about-python {
+    h2 {
+      font-size: px-to-rem(44px);
+      line-height: px-to-rem(56px);
+    }
+  }
+}
+
+@media (max-width: 880px) {
+  .about-python__item {
+    flex-basis: 49%;
+  }
+}
+
+@media (max-width: 680px) {
+  .about-python {
+    h2 {
+      font-size: px-to-rem(28px);
+      line-height: px-to-rem(42px);
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .about-python__item {
+    flex-basis: 100%;
+  }
+}

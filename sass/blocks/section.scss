@@ -1,0 +1,125 @@
+.section {
+  border-radius: 8px;
+  display: flex;
+  box-sizing: border-box;
+  padding-left: 65px;
+  &:nth-of-type(4) {
+    .section__name {
+      span {
+        color: #2F80ED;
+      }
+    }
+  }
+}
+
+.section__img {
+  flex-basis: 256px;
+  margin-right: 60px;
+
+  img {
+    display: block;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+}
+
+.section__list {
+  color: #333;
+  align-self: center;
+  flex-grow: 1;
+}
+
+.section__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section__name {
+  line-height: px-to-rem(22px);
+  font-size: px-to-rem(14px);
+  margin: 0;
+  display: inline-block;
+  color: #50545E;
+
+  span {
+    font-weight: 500;
+    display: block;
+    color: #9B51E0;
+    font-size: px-to-rem(32px);
+    line-height: px-to-rem(42px);
+    margin-top: 10px;
+  }
+
+}
+
+.section__time {
+  line-height: px-to-rem(22px);
+  font-size: px-to-rem(14px);
+  margin: 0;
+  color: #333;
+  align-self: flex-end;
+  margin-bottom: 12px;
+  margin-top: 10px;
+
+  b {
+    font-weight: 700;
+  }
+
+}
+
+.section__lessons {
+  font-size: px-to-rem(14px);
+  line-height: px-to-rem(22px);
+  margin: 0;
+  color: #333;
+  display: flex;
+  width: 100%;
+
+  span {
+    width: 65px;
+    flex-basis: 65px;
+    display: inline-block;
+    color: #9E9E9E;
+
+    &:first-child {
+      flex-shrink: 0;
+    }
+
+    &:last-child {
+      margin-left: auto;
+      flex-basis: auto;
+      width: auto;
+    }
+
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .section {
+    flex-direction: column;
+  }
+
+  .section__img {
+    flex-basis: auto;
+    margin-right: 0;
+    margin-bottom: 30px;
+
+    img {
+      margin: 0 auto;
+    }
+
+  }
+
+  .section__list {
+    flex-basis: auto;
+    align-self: stretch;
+  }
+
+}

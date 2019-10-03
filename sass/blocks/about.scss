@@ -1,0 +1,158 @@
+.about__wrap {
+  list-style: none;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.about__item {
+  width: 50%;
+  padding: 45px 0 45px 50%;
+  background: url("../img/about-img.png") left center / 45% no-repeat;
+}
+
+.about__title {
+  font-weight: 500;
+  font-size: px-to-rem(54px);
+  line-height: px-to-rem(64px);
+  color: $yellow;
+  margin: 0;
+  display: inline-block;
+}
+
+.about__title--blue {
+  color: #56CCF2;
+  margin-top: 70px;
+}
+
+.about__text {
+  font-size: px-to-rem(17px);
+  line-height: px-to-rem(24px);
+  margin: 20px 0;
+  opacity: 0.8;
+
+  span {
+    font-weight: 500;
+    color: $yellow;
+  }
+
+}
+
+.about--full {
+  background: none;
+
+  .about__item {
+    width: 100%;
+    padding: 0;
+  }
+
+  .about__wrap {
+    padding-top: 0;
+  }
+
+  .about__title {
+    margin-top: 0;
+  }
+
+}
+
+.about--last {
+  color: $black;
+  background: url('../img/about-last.png') left top no-repeat #F2F2F2;
+  background-size: auto 821px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url('../img/about-last-2x.png');
+  }
+
+  .about__wrap {
+    padding-bottom: 0;
+  }
+
+  .about__title {
+    color: #27AE60;
+    background: none;
+    -webkit-text-fill-color: #27AE60;
+  }
+
+  .about__item--left {
+    background: url('../img/about-last2.png') right center no-repeat;
+    background-size: 544px auto;
+    padding-left: 0;
+    padding-right: 50%;
+    padding-top: 150px;
+    padding-bottom: 150px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/about-last2-2x.png');
+    }
+  }
+
+}
+
+@media (max-width: 980px) {
+
+  .about {
+    background: none;
+  }
+  
+  .about--last {
+    background: #F2F2F2;
+
+    .about__item--left {
+      background: none;
+      padding-right: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    .about__wrap {
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-bottom: 45px;
+    }
+
+  }
+
+  .about__wrap {
+    margin-top: 65px;
+    margin-bottom: 65px;
+  }
+
+  .about__item {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 100%;
+    background: none;
+  }
+
+  .about__title {
+    font-size: px-to-rem(44px);
+    line-height: px-to-rem(56px);
+  }
+
+}
+
+@media (max-width: 680px) {
+
+  .about__title {
+    font-size: px-to-rem(28px);
+    line-height: px-to-rem(42px);
+  }
+
+  .about__wrap {
+    margin-top: 45px;
+    margin-bottom: 45px;
+  }
+
+  .about--last {
+
+    .about__wrap {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+  }
+
+}
